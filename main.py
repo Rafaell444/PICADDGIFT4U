@@ -7,7 +7,7 @@ p = []
 with open("s.txt", "r+") as file:
     for line in file:
         done = os.path.basename("r" + line)
-        a = done.replace('.', '')[:-5]
+        a = done[:-6]
         # format in the template I need
         print("""{{title:"{}",description: "ინფორმაცია",output: "ფასი"}},""".format(a))
         splitted = a.split("№")
