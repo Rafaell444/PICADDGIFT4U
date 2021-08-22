@@ -22,7 +22,8 @@ with open("s.txt", "r+") as file:
     #
     # second part:button making
 
+    counter = 1
     for g in res:
-        # for j in range(len(res)):
-        print("""{{id : 1, name :"{}"}},""".format(g))
-
+        withoutposter = g[:-7]
+        print("""{{id : "{}", name :"{}"}},""".format(counter, withoutposter))
+        counter += 1
