@@ -21,6 +21,6 @@ with open("s.txt", "r+") as file:
 
     counter = 1
     for g in res:
-        withoutposter = g[:-7]
+        withoutposter = g[:-9]
         print("""{{id : "{}", name :"{}"}},""".format(counter, withoutposter))
         counter += 1
