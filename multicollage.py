@@ -6,7 +6,9 @@ with open("s.txt", "r+") as file:
         done = os.path.basename("r" + line)
         a = done[:-6]
         # format in the template I need
-        print("""{{title:"{}",description: "ზომა≈ A3+",output: "ფასი: 6.50"}},""".format(a))
+        # h =
+        # a = a[4:]
+        print("""{{title:"{}",description: "მასალა:",output: "ფასი: 6.50"}},""".format(a))
         splitted = a.split("№")
 
         p.append(splitted[0])
@@ -21,7 +23,7 @@ with open("s.txt", "r+") as file:
 
     counter = 1
     for g in res:
-        withoutposter = g[:-7]
+        withoutposter = g[:-14]
         print("""{{id : "{}", name :"{}"}},""".format(counter, withoutposter))
 
         counter += 1
